@@ -11,18 +11,18 @@ int main() {
         count++;
 
         if (input > answer) {
-            printf("%d보다 낮습니다\n", input);
+            printf("%d>?\n", input);
         }
         else if (input < answer) {
-            printf("%d보다 높습니다\n", input);
+            printf("%d<?\n", input);
         }
         else {
             printf("%d 정답입니다\n", input);
         }
 
     } while (input != answer);
-    
-    printf("%d\n",count);
+
+    printf("%d\n", count);
 
     return 0;
 }
