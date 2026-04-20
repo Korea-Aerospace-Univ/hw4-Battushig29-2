@@ -4,6 +4,7 @@ int main() {
     int answer, input;
     int count = 0;
 
+    printf("정답 입력 : ");
     scanf("%d", &answer);
 
     do {
@@ -11,18 +12,19 @@ int main() {
         count++;
 
         if (input > answer) {
-            printf("%d>? %d보다 낮습니다\n", input, answer);
+            printf("%d>?\n", input);
         }
         else if (input < answer) {
-            printf("%d<? %d보다 높습니다\n", input, answer);
+            printf("%d<?\n", input );
         }
         else {
-            printf("%d==? %d 정답입니다\n", input, answer);
+            printf("%d==? \n", input );
         }
 
     } while (input != answer);
 
-    printf("%d 시도횟수는 %d회\n", answer, count);
+    
+    printf("%d", count);
 
     return 0;
 }
