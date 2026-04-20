@@ -22,7 +22,7 @@ int main() {
 
     } while (input != answer);
     
-    printf("%d\n", answer, count);
+    printf("%d\n",count);
 
     return 0;
 }
